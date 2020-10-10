@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- FAVICON LINK -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- CUSTOM STYLESHEET LINK -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- RESPONSIVE CSS LINK -->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- LEAFLET LINK -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <img class="hero" src="images/pattern-bg.png" alt="background image" />
+
+      <div class="nav">
+        <h1>IP Address Tracker</h1>
+        <form id="inputForm">
+          <input
+            placeholder="Search for any IP adresse or domain"
+            id="inputSearch"
+          />
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <section class="info">
+      <div class="box">
+        <h6>IP ADDRESS</h6>
+        <p class="ipAddress"></p>
+      </div>
+
+      <div class="bar"></div>
+
+      <div class="box">
+        <h6>LOCATION</h6>
+        <p id="location"></p>
+      </div>
+
+      <div class="bar"></div>
+
+      <div class="box">
+        <h6>TIMEZONE</h6>
+        <p id="timezone"></p>
+      </div>
+
+      <div class="bar"></div>
+
+      <div class="box">
+        <h6>ISP</h6>
+        <p id="isp"></p>
+      </div>
+    </section>
+
+    <section>
+      <div id="mapid"></div>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
